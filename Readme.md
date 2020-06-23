@@ -11,24 +11,25 @@ Originally forked from https://github.com/allthingsclowd/packer-vsphere-iso-exam
 - Clone this repository
 
 ``` bash
-git clone git@github.com:sdorsett/packer-vsphere-iso-example.git 
+git clone https://github.com/sdorsett/packer-vsphere-ubuntu-1804.git 
 ```
 
 - Configure the `.variables` file
 
 ``` json
 {
-    "vcenter_server":"YOUR VCENTRE IP ADDRESS",
+    "vcenter_server":"YOUR VCENTER IP ADDRESS",
     "username":"administrator@vsphere.local",
-    "password":"VCENTRE PASSWORD",
+    "password":"VCENTER PASSWORD",
     "datastore":"datastore1",
-    "folder": "/vm/_Templates",
     "host":"ESXi IP ADDRESS",
-    "cluster": "",
+    "cluster": "CLUSTER NAME",
     "network": "VM Network",
     "resource_pool": "",
-    "ssh_username": "grazzer",
-    "ssh_password": "grazzer"
+    "ssh_username": "ubuntu",
+    "ssh_password": "my_secret_password"
+    "ssh_key_src_pub": "id_rsa.pub",
+    "image_home_dir": "/home/"
 }
 ```
 
