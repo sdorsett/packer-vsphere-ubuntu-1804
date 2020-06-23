@@ -16,7 +16,7 @@ git clone https://github.com/sdorsett/packer-vsphere-ubuntu-1804.git
 
 - Configure the `.variables` file
 
-``` json
+``` bash
 {
     "vcenter_server":"YOUR VCENTER IP ADDRESS",
     "username":"administrator@vsphere.local",
@@ -27,7 +27,7 @@ git clone https://github.com/sdorsett/packer-vsphere-ubuntu-1804.git
     "network": "VM Network",
     "resource_pool": "",
     "ssh_username": "ubuntu",
-    "ssh_password": "my_secret_password"
+    "ssh_password": "my_secret_password",
     "ssh_key_src_pub": "id_rsa.pub",
     "image_home_dir": "/home/"
 }
